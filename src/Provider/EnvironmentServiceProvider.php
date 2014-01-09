@@ -24,7 +24,7 @@ class EnvironmentServiceProvider implements ServiceProviderInterface
     private $filepath;
     private $filename;
     private $variable;
-    private $environments = [];
+    private $environments = array();
     
     /**
      * Constructor.
