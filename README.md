@@ -103,7 +103,7 @@ This can either be achieved by setting an environment variable named
 
 ####.htaccess:
 
-``àpacheconf
+```apacheconf
 SetEnv SILEX_ENVIRONMENT production
 ```
 
