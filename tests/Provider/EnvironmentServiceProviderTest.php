@@ -6,6 +6,7 @@
  * @copyright (c) 2014, Holger Braehne
  * @license http://raw.github.com/simblo/environment-service-provider/master/LICENSE MIT
  */
+namespace Simblo\Silex\Tests\Provider;
 
 use Silex\Application;
 use Simblo\Silex\Provider\EnvironmentServiceProvider;
@@ -36,7 +37,10 @@ class EnvironmentServiceProviderTest extends \PHPUnit_Framework_TestCase
     
     public function testWithDefaultOptionToFalse()
     {
-        $this->setExpectedException('Simblo\Silex\Exception\NoEnvironmentSetException', 'No valid runtime environment was set.');
+        $this->setExpectedException(
+            'Simblo\Silex\Exception\NoEnvironmentSetException',
+            'No valid runtime environment was set.'
+        );
         
         $app = new Application();
         $app->register(new EnvironmentServiceProvider(array('default' => false)));
@@ -141,7 +145,10 @@ class EnvironmentServiceProviderTest extends \PHPUnit_Framework_TestCase
     
     public function testWithNotAllowedEnvironmentInVariableAndDefaultToFalse()
     {
-        $this->setExpectedException('Simblo\Silex\Exception\NoEnvironmentSetException', 'No valid runtime environment was set.');
+        $this->setExpectedException(
+            'Simblo\Silex\Exception\NoEnvironmentSetException',
+            'No valid runtime environment was set.'
+        );
         
         putenv('SILEX_ENVIRONMENT=foo');
         
