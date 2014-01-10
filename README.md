@@ -114,7 +114,7 @@ putenv('SILEX_ENVIRONMENT=production');
 ```
 
 or it can be set in an environment file. In this case a valid `filepath` must
-be set in the options. Just create the file ´\.setenv´ in a location which can
+be set in the options. Just create the file `.setenv` in a location which can
 be accesses by PHP and write down the desired environment inside.
 
 ### Retrieving the environment
