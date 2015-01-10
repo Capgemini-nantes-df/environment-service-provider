@@ -1,5 +1,8 @@
 # EnvironmentServiceProvider
 
+*The development version is for Silex 2 only. Please use the 1.0.x versions for
+Silex 1*
+
 An environment ServiceProvider for [Silex](http://silex.sensiolabs.org) which
 determines the environment (e.g. development, testing or production) an
 application build around [Silex](http://silex.sensiolabs.org) is running in.
@@ -9,17 +12,17 @@ application build around [Silex](http://silex.sensiolabs.org) is running in.
 [![Latest Unstable Version](https://poser.pugx.org/simblo/environment-service-provider/v/unstable.png)](https://packagist.org/packages/simblo/environment-service-provider)
 [![Build Status](https://travis-ci.org/simblo/environment-service-provider.png?branch=master)](https://travis-ci.org/simblo/environment-service-provider)
 [![Coverage Status](https://coveralls.io/repos/simblo/environment-service-provider/badge.png?branch=master)](https://coveralls.io/r/simblo/environment-service-provider?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/52cedab4ec13752ce20000ae/badge.png)](https://www.versioneye.com/user/projects/52cedab4ec13752ce20000ae)
+[![Dependency Status](https://www.versioneye.com/user/projects/54b0df802eea78c8ad00003f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54b0df802eea78c8ad00003f)
 
 ## Installation
 
-Installing EnvironmentServiceProvider is as simple as adding the following
-requirement to your `composer.json` file:
+To install the EnvironmentServiceProvider add the following requirement to your
+`composer.json` file.
 
 ```json
 {
     "required": {
-        "simblo/environment-service-provider": "~1.0"
+        "simblo/environment-service-provider": "2.0.*@dev"
     }
 }
 ```
@@ -98,7 +101,7 @@ special one ;)
 To set an application environment the provider is able to determine there are
 two different possible methods.
 
-This can either be achieved by setting an environment variable named 
+This can either be achieved by setting an environment variable named
 `SILEX_ENVIRONMENT` like shown in the following examples
 
 ####.htaccess:
